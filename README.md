@@ -1,20 +1,22 @@
+# Gmail logo in css and html, without png or image
 ![image](https://github.com/saofi10/gmail-logo-css/assets/129125993/161022f9-83d5-4342-9654-fd6130624b43)<br>
 this is how it looks like!<Br>
-/for future use just copy paste this part/
-<code>
+to use this, first copy paste this in your HTML file
+
+```html
 <div class='logo'>
-        <div class='left'></div>
-        <div class='right'></div>
-        <div class='top-l'>
-          <div class='left-romboid'></div>
-        </div>
-        <div class='top-r'>
-          <div class='right-romboid'></div>
-          </div>
-      </div>
-      </code>
-/and this other part in the css sheet/
-<code>
+    <div class='left'></div>
+    <div class='right'></div>
+    <div class='top-l'>
+        <div class='left-romboid'></div>
+    </div>
+    <div class='top-r'>
+        <div class='right-romboid'></div>
+    </div>
+</div>
+<br>
+THEN add this other part in your CSS sheet
+```css
 body { background-color: black; }
 
 .logo { width: 280px; height: 190px; background-color: white; display: flex; margin-left: 2rem; margin-top: 2rem; border-radius: 25px; overflow: hidden; position: relative; }
