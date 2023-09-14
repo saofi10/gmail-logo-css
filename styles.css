@@ -34,12 +34,13 @@ body {
 .top-r {
   height: 200px;
   width: 60px;
-  background-color: rgba(234, 67, 53, 0.8);
+  background-color: #ea4335;
   position: absolute;
   top: -30px;
   transform: rotate(-130deg);
   right: 52px; /* Ajustado para alinear con el borde de .right */
   display: flex;
+  overflow: hidden; /*this is really important to put*/
 }
 
 .top-l {
@@ -49,17 +50,31 @@ body {
   position: absolute;
   top: -30px;
   transform: rotate(130deg);
-  left: 52px; /* Ajustado para alinear con el borde de .left */
+  left: 52px; 
   display: flex;
-}
+  overflow: hidden;  /*this is really important to put*/
 
+}
+/*my better idea to fix the margins of the gmail logo was to 
+make the red par a container of each coloured corner, so it looks
+like a romboid but its actually a rectangle discolocated
+from its parent, and each parent has the overflow:hidden property 
+setted so it just doesnt show the overpassing parts.*/
+.right-romboid {
+  width: 120px; 
+  height: 120px; 
+  background-color: #fbbc05;
+  transform: rotate(130deg);
+  position: relative;
+  top: 100px; 
+  left: -10px; 
+}
 .left-romboid {
-  width: 100px;
-  height: 60px;
+  width: 120px; 
+  height: 120px; 
   background-color: #bb001b;
-  transform: rotate(40deg);
-  position: absolute;
-  top: 113; 
-  left: -0; 
-  overflow: hidden;
+  transform: rotate(50deg);
+  position: relative;
+  top: 100px; 
+  left: 9px; 
 }
