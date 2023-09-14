@@ -4,7 +4,8 @@ this is how it looks like!<Br>
 to use this, first copy paste this in your HTML file
 
 ```html
-<div class='logo'>
+
+<!--<div class='logo'>
     <div class='left'></div>
     <div class='right'></div>
     <div class='top-l'>
@@ -14,7 +15,7 @@ to use this, first copy paste this in your HTML file
         <div class='right-romboid'></div>
     </div>
 </div>
-<br>
+<br> -->
 THEN add this other part in your CSS sheet
 ```css
 body { background-color: black; }
